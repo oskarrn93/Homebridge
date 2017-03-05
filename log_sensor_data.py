@@ -22,14 +22,18 @@ debug = False
 def log_sensor():
     global threading_timer
 
-    r = requests.get("http://192.168.1.5:8080/json/sensor/info?id=135")
+    r = requests.get("http://192.168.1.5:8080/json/sensor/info?id=247")
+    #135
     parsed_json = json.loads(r.content)
+
+    if debug:
+        print parsed_json
 
     temperature_inside = parsed_json["data"][0]["value"]  # temp
     humidity_inside = parsed_json["data"][1]["value"]  # humid
     time_inside = datetime.datetime.fromtimestamp(parsed_json["lastUpdated"])
 
-    r = requests.get("http://192.168.1.5:8080/json/sensor/info?id=136")
+    r = requests.get("http://192.168.1.5:8080/json/sensor/info?id=248")
     parsed_json = json.loads(r.content)
 
     temperature_outside = parsed_json["data"][0]["value"]  # temp
@@ -55,9 +59,11 @@ def log_sensor():
 if __name__ == "__main__":
 
     print "Log sensor data script started"
-    if debug:
-        threading_timer = threading.Timer(debug_true_time, log_sensor)
-    else:
-        threading_timer = threading.Timer(debug_false_time, log_sensor)
 
-    threading_timer.start()
+    log_sensor()
+    #if debug:
+        #threading_timer = threading.Timer(debug_true_time, log_sensor)
+    #else:
+        #threading_timer = threading.Timer(debug_false_time, log_sensor)
+
+    #threading_timer.start()

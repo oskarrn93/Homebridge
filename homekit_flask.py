@@ -116,7 +116,7 @@ def temperature(location):
         res_humid = humidity_inside
     elif location == "outside":
         res_temp = temperature_outside
-        
+
     jsonobject = "{\"temperature\": " + res_temp + ",\"humidity\": " + res_humid + "}"
 
     resp = flask.Response(jsonobject)

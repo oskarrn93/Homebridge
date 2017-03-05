@@ -9,104 +9,110 @@
     "description": "Oskar's Homebridge Devices",
 
     "accessories": [
-    {
-        "accessory": "Http",
-        "name": "Dining Table Light",
-        "switchHandling": "yes",
-        "http_method": "GET",
-        "on_url":      "http://192.168.1.5:82/on/1",
-        "off_url":     "http://192.168.1.5:82/off/1",
-        "status_url":  "http://192.168.1.5:82/status/1",
-        "service": "Light",
-        "brightnessHandling": "yes",
-        "brightness_url":     "http://192.168.1.5:82/dim/set/1/%b",
-        "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/1",
-        "sendimmediately": "no",
-        "username" : "",
-        "password" : ""
-    },
+      {
+          "accessory": "Http",
+          "name": "Dining Table Light",
+          "switchHandling": "yes",
+          "http_method": "GET",
+          "on_url":      "http://192.168.1.5:82/on/1",
+          "off_url":     "http://192.168.1.5:82/off/1",
+          "status_url":  "http://192.168.1.5:82/status/1",
+          "service": "Light",
+          "brightnessHandling": "yes",
+          "brightness_url":     "http://192.168.1.5:82/dim/set/1/%b",
+          "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/1",
+          "sendimmediately": "no",
+          "username" : "",
+          "password" : ""
+      },
 
-    {
-        "accessory": "Http",
-        "name": "Kitchen Light",
-        "switchHandling": "yes",
-        "http_method": "GET",
-        "on_url":      "http://192.168.1.5:82/on/2",
-        "off_url":     "http://192.168.1.5:82/off/2",
-        "status_url":  "http://192.168.1.5:82/status/2",
-        "service": "Light",
-        "brightnessHandling": "no",
-        "brightness_url":     "http://192.168.1.5:82/dim/set/2/%b",
-        "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/2",
-        "sendimmediately": "",
-        "username" : "",
-        "password" : ""
-    },
+      {
+          "accessory": "Http",
+          "name": "Kitchen Light",
+          "switchHandling": "yes",
+          "http_method": "GET",
+          "on_url":      "http://192.168.1.5:82/on/2",
+          "off_url":     "http://192.168.1.5:82/off/2",
+          "status_url":  "http://192.168.1.5:82/status/2",
+          "service": "Light",
+          "brightnessHandling": "no",
+          "brightness_url":     "http://192.168.1.5:82/dim/set/2/%b",
+          "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/2",
+          "sendimmediately": "",
+          "username" : "",
+          "password" : ""
+      },
 
-    {
-        "accessory": "Http",
-        "name": "Small Window Light",
-        "switchHandling": "yes",
-        "http_method": "GET",
-        "on_url":      "http://192.168.1.5:82/on/3",
-        "off_url":     "http://192.168.1.5:82/off/3",
-        "status_url":  "http://192.168.1.5:82/status/3",
-        "service": "Light",
-        "brightnessHandling": "yes",
-        "brightness_url":     "http://192.168.1.5:82/dim/set/3/%b",
-        "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/3",
-        "sendimmediately": "no",
-        "username" : "",
-        "password" : ""
-    },
+      {
+          "accessory": "Http",
+          "name": "Small Window Light",
+          "switchHandling": "yes",
+          "http_method": "GET",
+          "on_url":      "http://192.168.1.5:82/on/3",
+          "off_url":     "http://192.168.1.5:82/off/3",
+          "status_url":  "http://192.168.1.5:82/status/3",
+          "service": "Light",
+          "brightnessHandling": "yes",
+          "brightness_url":     "http://192.168.1.5:82/dim/set/3/%b",
+          "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/3",
+          "sendimmediately": "no",
+          "username" : "",
+          "password" : ""
+      },
 
-    {
-        "accessory": "Http",
-        "name": "Large Window Light",
-        "switchHandling": "yes",
-        "http_method": "GET",
-        "on_url":      "http://192.168.1.5:82/on/4",
-        "off_url":     "http://192.168.1.5:82/off/4",
-        "status_url":  "http://192.168.1.5:82/status/4",
-        "service": "Light",
-        "brightnessHandling": "yes",
-        "brightness_url":     "http://192.168.1.5:82/dim/set/4/%b",
-        "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/4",
-        "sendimmediately": "no",
-        "username" : "",
-        "password" : ""
-    },
+      {
+          "accessory": "Http",
+          "name": "Large Window Light",
+          "switchHandling": "yes",
+          "http_method": "GET",
+          "on_url":      "http://192.168.1.5:82/on/4",
+          "off_url":     "http://192.168.1.5:82/off/4",
+          "status_url":  "http://192.168.1.5:82/status/4",
+          "service": "Light",
+          "brightnessHandling": "yes",
+          "brightness_url":     "http://192.168.1.5:82/dim/set/4/%b",
+          "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/4",
+          "sendimmediately": "no",
+          "username" : "",
+          "password" : ""
+      },
 
-    {
-        "accessory": "Http",
-        "name": "Lava Lamp Light",
-        "switchHandling": "yes",
-        "http_method": "GET",
-        "on_url":      "http://192.168.1.5:82/on/5",
-        "off_url":     "http://192.168.1.5:82/off/5",
-        "status_url":  "http://192.168.1.5:82/status/5",
-        "service": "Light",
-        "brightnessHandling": "no",
-        "brightness_url":     "http://192.168.1.5:82/dim/set/5/%b",
-        "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/5",
-        "sendimmediately": "",
-        "username" : "",
-        "password" : ""
-    },
+      {
+          "accessory": "Http",
+          "name": "Lava Lamp Light",
+          "switchHandling": "yes",
+          "http_method": "GET",
+          "on_url":      "http://192.168.1.5:82/on/5",
+          "off_url":     "http://192.168.1.5:82/off/5",
+          "status_url":  "http://192.168.1.5:82/status/5",
+          "service": "Light",
+          "brightnessHandling": "no",
+          "brightness_url":     "http://192.168.1.5:82/dim/set/5/%b",
+          "brightnesslvl_url":  "http://192.168.1.5:82/dim/status/5",
+          "sendimmediately": "",
+          "username" : "",
+          "password" : ""
+      },
 
-    {
-        "accessory": "HttpTemphum",
-        "name": "Inside Temperature",
-        "url": "http://192.168.1.5:82/temperature/inside",
-        "http_method": "GET"
-    },
+      {
+          "accessory": "HttpTemphum",
+          "name": "Inside Temperature",
+          "url": "http://192.168.1.5:82/temperature/inside",
+          "http_method": "GET"
+      },
 
-    {
-        "accessory": "HttpTemphum",
-        "name": "Outside Temperature",
-        "url": "http://192.168.1.5:82/temperature/outside",
-        "http_method": "GET"
-    }
+      {
+          "accessory": "HttpTemphum",
+          "name": "Outside Temperature",
+          "url": "http://192.168.1.5:82/temperature/outside",
+          "http_method": "GET"
+      },
 
+      {
+          "accessory": "LGTv2",
+          "name": "TV",
+          "mac": "14:C9:13:54:E9:83",
+          "ip": "192.168.1.14"
+      }
     ]
 }
