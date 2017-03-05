@@ -99,13 +99,11 @@ def setPowerOff():
     tn.write("PF\r\n")  # Turn off the receiver
     return responseData("ok","off")
 
-@app.route('/start')
-def start():
+@app.before_first_request
+def startup():
     global tn
 
     tn = telnetlib.Telnet(HOST, PORT)
-
-    return responseData("ok","started")
 
 @app.route('/stop')
 def stop():
